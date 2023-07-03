@@ -1,0 +1,92 @@
+html {
+  font-family: "Lucida Console", "Lucida Monospace", "Lucida Typewriter",
+    "Bitstream Vera Sans Mono", Monaco, monospace;
+  color: rgba(0, 0, 0, 0.7);
+  background: #fffaed;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 6em 4em 4em;
+}
+
+body {
+  max-width: 50em;
+  margin: 0 auto;
+  position: relative;
+}
+
+body::before {
+  content: "1";
+  position: absolute;
+  right: 0;
+  top: -3.2em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 1.6em 0 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+  font-weight: normal;
+}
+
+h1::after {
+  content: "------------------";
+  display: block;
+}
+
+p {
+  margin: 0 0 1.6em;
+}
+
+a {
+  color: inherit;
+  transition: 0.2s all;
+}
+
+a:hover,
+a:focus {
+  color: rgb(255, 60, 209);
+  text-shadow: 0 0 6px rgba(255, 60, 209, 0.1);
+}
+
+a:focus {
+  outline: 1px dotted rgba(0, 0, 0, 0.7);
+  outline-offset: 3px;
+}
+
+.bullet-link {
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0);
+}
+
+.bullet-link:hover,
+.bullet-link:focus {
+  text-shadow: 0 0 2px #f4c;
+}
+
+.about {
+  margin-top: 3.2em;
+}
+
+.footer {
+  margin-top: 4.8em;
+}
+
+.footer::before {
+  content: "--------------------";
+  letter-spacing: 0.6em;
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 14px;
+    padding: 4em 3em 3em;
+  }
+}
